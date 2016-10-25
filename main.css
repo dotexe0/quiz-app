@@ -1,0 +1,49 @@
+.container {
+box-sizing: border-box;
+width: 100%;
+text-align: center;
+
+}
+.title {
+  background: orange;
+  border: solid black;
+}
+
+.navbar {
+  background: orange;
+  border: solid black;
+  border-radius: 3px solid black;
+}
+.nav-list li{
+display: inline-block;
+position: relative;
+margin: 0 auto;
+padding-right: 20px;
+}
+
+.question-list li{
+  list-style-type: none;
+}
+
+.question-box {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.question-list {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.question-list .submit-answer {
+  margin-top: 20px;
+  display: block;
+}
+
+.github {
+  text-align: center;
+}
