@@ -17,22 +17,31 @@
         <li>About <a href="#about.html"></a></li>
       </ul>
     </nav>
-    <div class="question-box">
-      <ul class="question-list">
-        <ol>
-          <h3>Who is the creator of Bitcoin?</h3>
-        </ol>
-        <button class="submit-answer">a) Matoshi Nakatoto</button>
-        <button class="submit-answer">b) Satoshi Nakamoto</button>
-        <button class="submit-answer">c) Al Gore</button>
-        <button class="submit-answer">d) Sayoshi Takagomi</li>
-      </ul>
+    <div class="hidden">
+      <img class="correct hidden" src="images/bitcoin-correct.png" alt="correct-img" />
+      <img class="wrong hidden" src="images/bitcoin-wrong.svg" alt="wrong-img" />
+      <div class="score">
+      </div>
+
     </div>
+    <form class="question-box">
+      <ul class="start-quiz">
+          <h2>Test your <i class="fa fa-btc" aria-hidden="true"></i>
+            knowledge!</h2>
+          <h2>Click START to Beging the Quiz!</h2>
+        <li>
+          <button type="-start-button" name="start-button"><h3>START</h3></button>
+        </li>
+      </ul>
+    </form>
     </div>
 
     <footer class="github"><i class="fa fa-github" aria-hidden="true"></i>
 </footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js">
+</script>
   <script type="text/javascript" src="app.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+
   </body>
 </html>

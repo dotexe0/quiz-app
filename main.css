@@ -25,15 +25,42 @@ padding-right: 20px;
   list-style-type: none;
 }
 
+.hidden img{
+  /*visibility: hidden;*/
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.score {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 30px;
+}
+
 .question-box {
   width: 400px;
   height: 300px;
-  border: 1px solid black;
+  border: 5px solid black;
   border-radius: 30px;
-  margin-top: 50px;
+  margin-top: 0px;
   display: inline-block;
+  color:
 }
 
+.start-quiz {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 200px;
+  display: inline;
+}
+
+.start-button {
+}
 .question-list {
   text-align: left;
   padding-top: 10px;
