@@ -1,28 +1,53 @@
+html {
+  background-image: url(http://bitcoinist.net/wp-content/uploads/2014/10/getting_started_hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
 box-sizing: border-box;
 width: 100%;
 text-align: center;
-
 }
 .title {
   background: orange;
   border: solid black;
+  border-radius: 10px;
+  display: inline;
+  padding: 0 20px 0 20px;
+
+}
+a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
 }
 
-.navbar {
-  background: orange;
-  border: solid black;
-  border-radius: 3px solid black;
+ul {
+  padding-left: 0px;
+  list-style-type: none;
 }
+
 .nav-list li{
+width: 80px;
+background: orange;
+border: 3px solid black;
+border-radius: 15px;
 display: inline-block;
 position: relative;
 margin: 0 auto;
-padding-right: 20px;
+padding: 10px 10px;
+list-style-type: none;
 }
 
 .question-list li{
   list-style-type: none;
+}
+
+.submit-answer {
+  margin-left: 40px;
 }
 
 .hidden img{
@@ -34,22 +59,28 @@ padding-right: 20px;
   width: 30px;
 }
 
-.score {
+.score img{
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 5px;
   height: 30px;
   width: 30px;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .question-box {
   width: 400px;
-  height: 300px;
-  border: 5px solid black;
+  height: auto;
+  border: 3px solid black;
   border-radius: 30px;
-  margin-top: 0px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
   display: inline-block;
-  color:
+  background-color: #ffffff;
+  opacity: .95;
 }
 
 .start-quiz {
@@ -60,7 +91,15 @@ padding-right: 20px;
 }
 
 .start-button {
+  border: 0px;
+  border-radius: 12px;
+  background-color: orange;
 }
+
+.start-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .question-list {
   text-align: left;
   padding-top: 10px;
@@ -71,11 +110,12 @@ padding-right: 20px;
   display: block;
 }
 
-.github {
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #efefef;
   text-align: center;
-}
-
-.fa-github {
-  margin-top: 20px;
-  display: block;
 }

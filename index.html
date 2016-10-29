@@ -9,39 +9,34 @@
   </head>
   <body>
     <div class="container">
-      <h1 class='title'>Quiz</h1>
+      <h1 class='title'>The Bitcoin Quiz</h1>
     <nav class="navbar">
       <ul class="nav-list">
-        <li>Restart <a href="#index.html"></a></li>
-        <li>Answers <a href="#answers.html"></a></li>
-        <li>About <a href="#about.html"></a></li>
+        <li><a href="index.html">Restart</a></li>
+        <li><a href="#" class="answers">Answers</a></li>
       </ul>
     </nav>
-    <div class="hidden">
-      <img class="correct hidden" src="images/bitcoin-correct.png" alt="correct-img" />
-      <img class="wrong hidden" src="images/bitcoin-wrong.svg" alt="wrong-img" />
-      <div class="score">
-      </div>
 
+    <div class="score">
     </div>
+
     <form class="question-box">
       <ul class="start-quiz">
           <h2>Test your <i class="fa fa-btc" aria-hidden="true"></i>
             knowledge!</h2>
           <h2>Click START to Beging the Quiz!</h2>
         <li>
-          <button type="-start-button" name="start-button"><h3>START</h3></button>
+          <button type="button" class="start-button" name="start-button"><h3>START</h3></button>
         </li>
       </ul>
     </form>
     </div>
+  <footer class="github">
+    <a href="http://www.github.com/dotexe0"><i class="fa fa-github" aria-hidden="true" ></i></a>
 
-    <footer class="github"><i class="fa fa-github" aria-hidden="true"></i>
-</footer>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js">
-</script>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js">
+  </script>
   <script type="text/javascript" src="app.js"></script>
-
-
   </body>
 </html>
