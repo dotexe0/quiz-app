@@ -90,7 +90,7 @@ list-style-type: none;
   display: inline;
 }
 
-.start-button {
+.start-button, start-button:active {
   border: 0px;
   border-radius: 12px;
   background-color: orange;
