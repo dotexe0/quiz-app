@@ -52,12 +52,15 @@ $(document).ready(function(event){
     }
     else{
       var img = '<img class="wrong score" src="images/bitcoin-wrong.svg" alt="correct-img"/>'
+      var wrong = '<h5 class="text">Wrong! the Correct answer is ' + quiz[currentQuestion].solution + '<h5>';
       $('.score').append(img);
+      $('.score').append(wrong);
+      $('h5').delay(2000).hide('.text');
     };
   };
 
   //begin quiz
-  $('.start-quiz').click(function(){
+  $('.start-quiz').on('click', '.start-button', function(){
     $('.question-box').hide(10);
     $('.question-box').show(1500);
     $('.start-quiz').remove();
