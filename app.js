@@ -82,14 +82,14 @@ $(document).ready(function(event){
       currentQuestion += 1;
       renderQuestion(currentQuestion);
       $('.question-box').show(1500);
-    } else {
+    } else {``
       //render results page
       $('.question-box').empty();
-      var results = '<h1>Results</h1>' + score + '/' + quiz.length + ' correct.'
+      var results = '<h1>Results</h1>' + score + '/' + quiz.length + ' correct'
       $('.question-box').append(results);
       // display youtube video
       // $('footer').css("position", "relative");
-      var embedYoutube = '<br><iframe width="560" height="315" src="https://www.youtube.com/embed/Gc2en3nHxA4" frameborder="0" allowfullscreen></iframe>'
+      var embedYoutube = '<br><iframe width="560" height="315" src="https://www.youtube.com/embed/Gc2en3nHxA4" frameborder="0" allowfullscreen id="ytube"></iframe>'
       $('.container').append(embedYoutube);
       $('form').show(1500);
     };

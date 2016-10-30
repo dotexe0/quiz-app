@@ -113,6 +113,7 @@ list-style-type: none;
 
 footer {
   position: fixed;
+  margin-top: 40px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -135,4 +136,8 @@ footer {
 
 .wrong {
   color: red;
+}
+
+#ytube {
+  margin-bottom: 40px;
 }
