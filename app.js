@@ -45,9 +45,11 @@ $(document).ready(function(event){
   //check if radio button selected is correct answer and update progress bar
   var score = 0;
   function currentScore(buttonSelected){
-    if (quiz[currentQuestion].solution == buttonSelected){
+    var answer = buttonSelected.text();
+    if (quiz[currentQuestion].solution == answer){
       score += 1;
       var img = '<img class="correct score" src="images/bitcoin-correct.png" alt="correct-img"/>'
+      buttonSelected.addClass('correct');
       $('.score').append(img);
     }
     else{
@@ -55,6 +57,8 @@ $(document).ready(function(event){
       var wrong = '<h5 class="popuptext">Wrong! the Correct answer is ' + quiz[currentQuestion].solution + '<h5>';
       $('.score').append(img);
       $('.score').append(wrong);
+      buttonSelected.addClass('wrong');
+      buttonSelected.addClass('correct');
       $('h5').delay(2000).hide('.text');
     };
   };
@@ -70,15 +74,15 @@ $(document).ready(function(event){
   $(document).on('click', '.submit-answer', function(event){
     event.preventDefault();
     $('.question-box').css({'margin-top': '0px'});
-    var buttonSelected = $(this).text();
+    var buttonSelected = $(this);
     currentScore(buttonSelected);
     $('.question-box').hide(10);
-      $('.question-list').remove();
-      if (currentQuestion < quiz.length - 1){
-        currentQuestion += 1;
-        renderQuestion(currentQuestion);
+    $('.question-list').remove();
+    if (currentQuestion < quiz.length - 1){
+      currentQuestion += 1;
+      renderQuestion(currentQuestion);
       $('.question-box').show(1500);
-    }else {
+    } else {
       //render results page
       $('.question-box').empty();
       var results = '<h1>Results</h1>' + score + '/' + quiz.length + ' correct.'
