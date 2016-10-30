@@ -52,7 +52,7 @@ $(document).ready(function(event){
     }
     else{
       var img = '<img class="wrong score" src="images/bitcoin-wrong.svg" alt="correct-img"/>'
-      var wrong = '<h5 class="text">Wrong! the Correct answer is ' + quiz[currentQuestion].solution + '<h5>';
+      var wrong = '<h5 class="popuptext">Wrong! the Correct answer is ' + quiz[currentQuestion].solution + '<h5>';
       $('.score').append(img);
       $('.score').append(wrong);
       $('h5').delay(2000).hide('.text');
@@ -84,6 +84,7 @@ $(document).ready(function(event){
       var results = '<h1>Results</h1>' + score + '/' + quiz.length + ' correct.'
       $('.question-box').append(results);
       // display youtube video
+      $('footer').css("position", "relative");
       var embedYoutube = '<br><iframe width="560" height="315" src="https://www.youtube.com/embed/Gc2en3nHxA4" frameborder="0" allowfullscreen></iframe>'
       $('.container').append(embedYoutube);
       $('form').show(1500);
