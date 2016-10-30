@@ -98,7 +98,7 @@ $(document).ready(function(event){
   //handle answers page
   $(document).on('click', '.answers', function(){
     $('.question-box').empty();
-    var answers = '<br>' +
+    var answers ='<p class="answers-text">'+ '<br>' +
       quiz[0].question + '<br>' + quiz[0].solution + '<br><br>' +
       quiz[1].question + '<br>' + quiz[1].solution + '<br><br>' + quiz[2].question + '<br>' + quiz[2].solution + '<br><br>' + quiz[3].question + '<br>' + quiz[3].solution + '<br><br>' + quiz[4].question + '<br>' + quiz[4].solution + '<br><br>';
     $('.question-box').append(answers);

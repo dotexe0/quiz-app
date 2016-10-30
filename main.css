@@ -141,3 +141,8 @@ footer {
 #ytube {
   margin-bottom: 40px;
 }
+
+.answers-text {
+  text-align: left;
+  padding-left: 20px;
+}
